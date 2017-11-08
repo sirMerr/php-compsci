@@ -1,0 +1,6 @@
+[submodule "dont-eat-here-app"]
+	path = dont-eat-here-app
+	url = git@github.com:sirMerr/dont-eat-here-app.git
+[submodule "speedreader"]
+	path = speedreader
+	url = git@github.com:sirMerr/speedreader.git
