@@ -23,9 +23,15 @@ $timestampDate = date("l, F, t",$timestamp);
 //echo $timestampDate." days"."<br>";
 
 class AgendaEvent {
-    function AgendaEvent($eventDate, $activity) {
+    private $eventDate;
+    private $activity;
+    public function __construct($eventDate, $activity) {
         $this->eventDate = $eventDate;
         $this->activity = $activity;
+    }
+
+    public function __destruct() {
+        print "Destroying "."\n";
     }
 }
 $activities = array();

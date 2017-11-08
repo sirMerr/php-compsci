@@ -22,7 +22,7 @@ array_push($userInfo, $name, $gender, $poker, $biking, $dancing,
  */
 function validate($data) {
     echo "Validating: ".$data."<br>";
-    if (!empty($data)) {
+    if (empty($data)) {
         return 'No data';
     }
     // Remove HTML tags (strip_tags) and convert characters
@@ -38,3 +38,7 @@ function validate($data) {
 foreach ($userInfo as $value) {
     echo $value."<br>";
 }
+?>
+<script type="text/javascript">
+    jsFunction();
+</script>
